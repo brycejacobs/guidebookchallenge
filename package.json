@@ -1,0 +1,12 @@
+{
+  "name": "guidbookchallenge",
+  "version": "1.0.0",
+  "description": "Code Challenge",
+  "main": "index.js",
+  "author": "Bryce Jacobs",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.11.2",
+    "request": "^2.53.0"
+  }
+}

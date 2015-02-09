@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.1/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+
+  <body ng-app="guidebook">
+
+    <div class="searcher" ng-controller="SearchController">
+        <div class="search-block">
+          <h3>Guidebook Public API Search</h3>
+          <input type="text" placeholder="Search..." ng-change="performSearch()" ng-model="term" />
+          <h5 ng-if="resultsTotal">Total Results: {{resultsTotal}}</h5>
+        </div>
+        <ul class="search-results">
+            <li ng-repeat="result in results">
+              <div class="result">
+                <img ng-src="{{result.icon}}"/>
+                <div class="description">
+                  <p>{{result.name}}</p>
+                  <p ng-if="result.startDate">Start: {{result.startDate | date}}</p>
+                </div>
+                <div class="venue-column">
+                  <h5>Venue</h5> 
+                  <p>{{result.venue.name}}</p>
+                  <p>{{result.venue.street}}</p>
+                  <p>{{result.venue.city}}, {{result.venue.state}} {{result.venue.zip}}</p>
+                </div>
+              </div>
+              <hr/>
+            </li>
+        </ul>
+    </div>
+  </body>
+
+</html>

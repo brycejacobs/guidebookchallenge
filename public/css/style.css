@@ -1,0 +1,59 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'robotolight', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  background-color: #fcfcfc;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+.searcher {
+  margin: 50px auto 0 50px;
+}
+
+.searcher .search-block input[type="text"] {
+  font-size: 20px;
+  width: 500px;
+  height: 30px;
+}
+
+.searcher .search-block h5 {
+  width: 15%;
+}
+
+.searcher .search-results {
+  width: 75%;
+  list-style: none;
+}
+
+.searcher .search-results li .result {
+  width: 100%;
+  margin-top: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.searcher .search-results li img {
+  margin-top: 10px;
+  width: 125px;
+  height: 100px;  
+}
+
+.searcher .search-results li .description {
+  margin: 5px 0 0 10px;
+  vertical-align: top;
+}
+
+.venue-column {
+  margin-left: 50px;
+  vertical-align: top;
+}
