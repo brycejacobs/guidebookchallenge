@@ -7,53 +7,58 @@ body {
 }
 
 body {
-  position: relative;
   font-family: 'robotolight', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   background-color: #fcfcfc;
   box-sizing: border-box;
-  min-height: 100%;
 }
 
 .searcher {
-  margin: 50px auto 0 50px;
+  max-height: 600px;
+  overflow: auto;
+  width: 800px;
+  margin: 0 auto;
 }
 
-.searcher .search-block input[type="text"] {
-  font-size: 20px;
-  width: 500px;
-  height: 30px;
+.search__block input[type="text"]{
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 1.4em;
+  width: 95%;
 }
 
-.searcher .search-block h5 {
+.search__block h5 {
   width: 15%;
 }
 
-.searcher .search-results {
-  width: 75%;
+.search__results {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.searcher .search-results li .result {
+.search__result {
   width: 100%;
   margin-top: 15px;
   padding: 25px;
-  display: flex;
-  flex-direction: row;
 }
 
-.searcher .search-results li img {
+.search__result img {
   margin-top: 10px;
-  width: 125px;
-  height: 100px;  
+  width: 20%; 
 }
 
-.searcher .search-results li .description {
-  margin: 5px 0 0 10px;
+.search__result-description {
+  width: 40.9%;
+  display: inline-block;
+  padding: 5px 0 0 20px;
   vertical-align: top;
 }
 
-.venue-column {
-  margin-left: 50px;
+.search__result-venue {
+  width: 32.9%;
+  display: inline-block;
+  padding-left: 20px;
   vertical-align: top;
 }
